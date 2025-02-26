@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CLI</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+      .instagram-font {
+        font-family: "Grand Hotel", serif;
+      }
+    </style>
+  </head>
+  <body class="h-screen bg-gray-100 flex items-center justify-center">
+    <div
+      class="md:h-[90vh] h-screen md:rounded-3xl w-full max-w-sm bg-gradient-to-br from-purple-800 via-pink-500 to-yellow-500 flex items-center justify-center py-4 relative"
+    >
+      <div class="w-full mx-auto text-center gap-5 flex flex-col">
+        <p class="text-6xl text-white instagram-font">
+          Instagram
+        </p>
+        <form action="" class="mx-4">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            class="bg-gray-100 py-2 px-4 rounded-lg my-2 w-full"
+          />
+          <input
+            type="password"
+            name="password"
+            id="username"
+            placeholder="Password"
+            class="bg-gray-100 py-2 px-4 rounded-lg my-2 w-full"
+          />
+          <p class="text-right text-sm font-semibold text-white">
+            Forget Password ?
+          </p>
+          <input
+            type="submit"
+            value="Log In"
+            class="bg-blue-400 text-white font-semibold tracking-wide p-2 rounded-lg my-2 w-full cursor-pointer"
+          />
+        </form>
+        <div class="flex items-center justify-center gap-2 mx-4">
+          <span class="w-full border-t border-white"></span>
+          <p class="text-white font-semibold text-sm">OR</p>
+          <span class="w-full border-t border-white"></span>
+        </div>
+        <div
+          class="flex items-center justify-center gap-2 mx-4 font-semibold text-white hover:underline crusor-pointer"
+        >
+          <i class="fa-brands fa-square-facebook"></i>
+          <p>Log In with Facebook</p>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-0 w-full text-center text-white font-semibold py-6 border-t border-white"
+      >
+        Dont have an account ?
+        <a href="#" class="text-white font-semibold hover:underline">Sign Up</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Pizza Online - Pizza Hut</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="px-44 py-3 bg-white h-14 flex justify-between items-center w-full top-0">
+      <img src="https://www.pizzahut.co.in/order/images/logos/logo_wide@x2.38f9109e24d22d58d048837b27f54390.png" alt="Logo" class="h-full" />
+      <p>Sing In</p>
+    </nav>
+    <div
+      class="h-full min-h-[90vh] bg-[url(https://www.pizzahut.co.in/order/images/backgrounds/in/en-IN/home-bg-md.9dd31be8f7ced8c87278cb3aa6726170.jpg)] bg-no-repeat bg-contain mt-0 overflow-y-hidden relative"
+    >
+      <div class="absolute w-full max-w-lg bottom-10 mx-auto flex flex-col shadow-2xl left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div class="w-full flex text-red-500 justify-between bg-white rounded-t">
+          <p class="flex items-center rounded-t-2xl py-2 px-4 text-lg gap-2 text-center w-1/2"><i class="fa-solid fa-motorcycle"></i><span>Delivery</span></p>
+          <p class="flex items-center bg-gray-300 rounded-t py-2 px-4 text-lg gap-2 text-center w-1/2"><i class="fa-solid fa-shop"></i><span>Collect From Store</span></p>
+        </div>
+        <form action="get" class="bg-white w-full px-10 py-5 flex flex-col space-y-4">
+          <div>
+            <p class="font-semibold">FIND YOUR NEAREST HUT</p>
+            <p class="text-gray-500">Enter your address to see your local deals, coupons and offers.</p>
+          </div>
+          <input type="text" placeholder="Enter your location for delivery" class="w-full border py-2 px-4" />
+          <div class="flex gap-2 items-center text-blue-500">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Find my current location</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="w-full flex flex-col space-y-8 py-4">
+      <div class="w-full flex flex-row items-center justify-center">
+        <hr class="flex-grow" />
+        <p class="px-4 text-xl font-semibold">Our Most Popular Deals</p>
+        <hr class="flex-grow" />
+      </div>
+      <div class="px-30 w-full space-y-8">
+        <div class="grid grid-cols-2 gap-5 items-center">
+          <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/promo/hut125.5893dee123b1a79e089241a83f936067.1.jpg" alt="" class="w-full" />
+          <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/promo/hut125.5893dee123b1a79e089241a83f936067.1.jpg" alt="" class="w-full" />
+        </div>
+        <button class="mx-4 w-full bg-green-700 text-center text-white py-3 text-xl font-semibold rounded-lg tracking-wide">View all deals</button>
+      </div>
+    </div>
+    <footer class="bg-black py-4 px-40 text-white text-xs flex flex-col space-y-8">
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="text-lg">Order Now</p>
+          <p>Deals</p>
+          <p>Pizza</p>
+          <p>Slide</p>
+          <p>Drink</p>
+          <p>Desserts</p>
+        </div>
+        <div>
+          <p class="text-lg">Order Now</p>
+          <p>Deals</p>
+          <p>Pizza</p>
+          <p>Slide</p>
+          <p>Drink</p>
+          <p>Desserts</p>
+        </div>
+        <div>
+          <p class="text-lg">Order Now</p>
+          <p>Deals</p>
+          <p>Pizza</p>
+          <p>Slide</p>
+          <p>Drink</p>
+          <p>Desserts</p>
+        </div>
+        <div>
+          <p class="text-lg">Order Now</p>
+          <p>Deals</p>
+          <p>Pizza</p>
+          <p>Slide</p>
+          <p>Drink</p>
+          <p>Desserts</p>
+        </div>
+      </div>
+      <div class="w-full justify-center gap-3 flex h-10">
+        <img src="https://www.pizzahut.co.in/order/images/icons/app-store-ios.fd6d0921ff522febd6e2a4c2fab9af72.svg" alt="" class="h-full" />
+        <img src="https://www.pizzahut.co.in/order/images/icons/app-store-google-play.b1ffb9f40420b63efe43e34f60bfb682.png" alt="" class="h-full" />
+      </div>
+      <div class="w-full flex justify-between items-center text-base">
+        <div class="flex flex-col gap-2 items-center w-full max-w-sm">
+          <p>Help us in serving you better</p>
+          <button class="py-2 text-black text-lg w-full bg-white px-20 rounded-lg">Give Feedback</button>
+        </div>
+        <div class="flex flex-col gap-2 items-center">
+          <p>Follow us</p>
+          <div class="flex items-center gap-4 text-xl">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="text-[12px] text-gray-400 w-full text-center px-20">
+        <p>
+          Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, you get a hot and fresh pizza delivered at your doorstep
+          in less than thirty minutes. *T&C Apply.
+        </p>
+        <p>Hurry up and place your order now!</p>
+        <p class="mt-3">© 2025 Pizza Hut India. All rights reserved. License Number: 10017011004220</p>
+      </div>
+      <div class="h-20 flex items-center justify-center">
+        <img src="https://www.pizzahut.co.in/order/images/footer/FSAAI-logo.cb99007614b9cff3e0150bce9711641d.svg" alt="" class="h-full bg-white rounded-2xl" />
+      </div>
+    </footer>
+  </body>
+</html>

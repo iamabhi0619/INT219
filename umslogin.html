@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMS | Login</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="h-screen w-full flex items-center justify-center p-0 bg-orange-50"
+  >
+    <div class="w-1/2 h-full p-0 md:block hidden">
+      <img
+        src="https://files.lpu.in//umsweb//Events//umseventAssets//27273_2025_1_8_12_26.jpg"
+        class="size-full"
+        alt="lpu_image"
+      />
+    </div>
+    <div
+      class="md:w-1/2 h-full flex flex-col gap-9 items-center justify-center px-20 w-full"
+    >
+      <div class="flex h-16 items-center justify-center gap-4">
+        <img
+          src="https://ums.lpu.in/lpuums/assets/login/img/logos/seal.svg"
+          alt="lpu-logo"
+          class="h-full"
+        />
+        <img
+          src="https://ums.lpu.in/lpuums/assets/login/img/logos/ums_logo1.svg"
+          alt="ums"
+          class="h-full w-72"
+        />
+      </div>
+      <form
+        action=""
+        method="post"
+        class="w-full bg-white p-16 text-lg font-sans flex flex-col rounded-xl shadow-2xl gap-6"
+      >
+        <div class="flex w-full items-center justify-start gap-3">
+          <h1 class="w-1/6 text-xl">Log in</h1>
+          <select
+            name="type"
+            id=""
+            title="Select"
+            class="flex-wrap bg-orange-100 w-full py-3 px-4"
+          >
+            <option value="1">HeadOffice</option>
+            <option value="2">Nepal</option>
+            <option value="3">Buthan</option>
+          </select>
+        </div>
+        <div class="relative">
+          <input
+            type="text"
+            name="user_id"
+            id="user_id"
+            title="user_id"
+            class="flex-wrap bg-orange-100 w-full py-3 px-4"
+            placeholder="User ID"
+          />
+          <div class="absolute bottom-3 right-6">
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+        <div class="relative">
+          <input
+            type="text"
+            name="Password"
+            id="Password"
+            title="Password"
+            class="flex-wrap bg-orange-100 w-full py-3 px-4"
+            placeholder="Password"
+          />
+          <div class="absolute bottom-3 right-6">
+            <i class="fa-regular fa-eye-slash"></i>
+          </div>
+        </div>
+        <div class="text-end">
+            <p>Forgot your password?</p>
+        </div>
+        <input type="submit" value="Login" class="bg-orange-400 w-full py-3 text-white rounded">
+      </form>
+      <div class=" flex items-center gap-4">
+        <img src="https://ums.lpu.in/lpuums/assets/login/img/mail-icon.svg" alt="">
+        <p class="text-lg">Student Mail</p>
+      </div>
+    </div>
+  </body>
+</html>
